@@ -1,0 +1,10 @@
+Name: Braden Maillet
+email:braden_maillet@student.uml.edu
+Class: Comp 3050 202
+
+Degree of success: 100%
+
+Description of Project: I approached this project similarly to how I would approach an fp addition problem on paper. After all of the initial input there are 3 paths to start the addition on fp numbers 1 and 2. The case that 1 has a greater exponent, the case that 2 has the greater exponent and lastly the case that exponents are equal. Each of these cases shift and or push in the hidden bit. After this I perform multiple checks to make sure the output is correct. I first check for excess hidden bits and shift/change the exponent if they exist. I secondly check for the case in which addition will result in nan or inf. Due to the fact that 2 normal fp numbers(non nan) numbers can only add to another fp number or inf I use this to alter the result of one case in which addition would falsely result in nan. The everything is output.
+
+Problems with project: There are no problems that I am aware of.
+
