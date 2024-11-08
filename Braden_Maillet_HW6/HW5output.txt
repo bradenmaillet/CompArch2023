@@ -1,0 +1,44 @@
+Output of linked code:
+
+./mic1 prom_mrd.dat mya.exe 0 1024
+
+Read in 152 micro instructions
+Read in 259 machine instructions
+Starting PC is : 0000000000000000  base 10:       0
+Starting SP is : 0000010000000000  base 10:    1024
+
+****************************************************
+Please enter a 1-5 digit number followed by enter
+235
+Please enter a 1-5 digit number followed by enter
+0
+the sum of these integers is
+235
+****************************************************
+Please enter a 1-5 digit number followed by enter
+16341
+Please enter a 1-5 digit number followed by enter
+957
+the sum of these integers is
+17298
+****************************************************
+Please enter a 1-5 digit number followed by enter
+23786
+Please enter a 1-5 digit number followed by enter
+12400
+the sum of these integers is
+operation resulted in overflow
+****************************************************
+Please enter a 1-5 digit number followed by enter
+12
+Please enter a 1-5 digit number followed by enter
+23
+the sum of these integers is
+35
+****************************************************
+Please enter a 1-5 digit number followed by enter
+1
+Please enter a 1-5 digit number followed by enter
+1343
+the sum of these integers is
+1344
