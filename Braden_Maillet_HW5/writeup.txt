@@ -1,0 +1,19 @@
+Name: Braden Maillet
+Email: Braden_Maillet@student.uml.edu
+
+degree of success: 100%
+
+Errors: I now realise that I forgot to implement the program in such a way that the required function
+takes the location to store the sum from the stack. This is the only error that I am aware of and
+I don't really have the time to fix it so I hope it doesn't cost too many points.
+
+Description: This program begins by requesting the user to input an integer for addition. It repeats
+this for a second time. It then outputs a formatting sentence and outputs the sum of those two integers.
+I set up the program so that it repeats this indefinetely. It uses the special IO memory location to
+input and output characters. In order to convert the characters to decimal and vice versa, the program
+uses division and multiplication that was created in the previous Homework.
+
+Makefile notes: 
+    'make obj' creates object file
+    'make run' runs program
+    'make clean' removes object file
