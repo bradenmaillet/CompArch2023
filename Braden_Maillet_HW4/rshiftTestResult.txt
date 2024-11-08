@@ -1,0 +1,103 @@
+./mic1 prom_nr.dat rshift_test.obj 0 2000
+
+{RESULT 1} *****************************************************
+
+Read in 176 micro instructions
+Read in 25 machine instructions
+Starting PC is : 0000000000000000  base 10:       0
+Starting SP is : 0000011111010000  base 10:    2000
+
+
+ProgramCounter : 0000000000000011  base 10:       3
+Accumulator    : 0000110101111011  base 10:    3451 {3451 shifted by 0} **************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111010000  base 10:    2000
+ARegister      : 0000000000001111  base 10:      15
+BRegister      : 1111111111111111  base 10:   65535
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 41
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000000011
+
+{RESULT 2}******************************************************************
+
+
+ProgramCounter : 0000000000000110  base 10:       6
+Accumulator    : 0000010000000000  base 10:    1024 {8192 rshift by 3}*************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111010000  base 10:    2000
+ARegister      : 0000000000001111  base 10:      15
+BRegister      : 1111111111111111  base 10:   65535
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 88
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000000110
+
+{RESULT 3}************************************************************************
+
+ProgramCounter : 0000000000001001  base 10:       9
+Accumulator    : 0000000111000000  base 10:     448 {-8192 rshifted by 7} **************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111010000  base 10:    2000
+ARegister      : 0000000000001111  base 10:      15
+BRegister      : 1111111111111111  base 10:   65535
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 143
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000001001
+
+{result 4}****************************************************************
+
+ProgramCounter : 0000000000001100  base 10:      12
+Accumulator    : 0000000000000001  base 10:       1 {-32768 rshift by 15}*****************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111010000  base 10:    2000
+ARegister      : 0000000000001111  base 10:      15
+BRegister      : 1111111111111111  base 10:   65535
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 214
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000001100
+
+{Result 5} **************************************************************************
+
+
+ProgramCounter : 0000000000001111  base 10:      15
+Accumulator    : 0000000000111011  base 10:      59 {944 rshift by 4} *******************************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111010000  base 10:    2000
+ARegister      : 0000000000001111  base 10:      15
+BRegister      : 1111111111111111  base 10:   65535
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0

@@ -1,0 +1,45 @@
+Name: Braden Maillet
+Email: braden_maillet@student.uml.edu
+
+Level of Success: 100%
+
+Problems?: none to my knowledge.
+
+Description of project:
+
+    To begin this project I set up the .c and .ll files. The changes made to these
+files were not very complicated. I added a couple lines of code to each that were provided by the proffessor.
+In terms of the .mc file, I split up my work into 2 parts(1 file). The first being the implementation of the MULT
+command followed by the implementation of the DIV command.
+
+    MULT: The Mult implementation starts by storing the sp in a scratchpad register which will be used later.
+    Next I take the IR and band it with the smask. why is this correct despite the arguement in 
+    the MULT ir having a 6 bit arguement and smask having a 8 bit mask? lucking the instruction for
+    MULT will always have 2 0's in those extra 2 bits that the smask detects so they wont have an effect
+    on the arguement. Using this arguement and the value on the sp I create a simple loop that continuously
+    adds the sp to itself for however many times the arguement indicates. Beyond the backbone of the implementation
+    I also test for overflow. I do this by testing if the sp is negative or not. If it is negative I know the result
+    will have to be aswell. If the result isn't negative I can use the AC to tell the user that there was overflow. The
+    vice versa works for the positive sp case.
+
+    DIV:Div starts similar to Mult in the sense that it collects data from the stack into scratch pad registers(a,b) for storage.
+    Following this both the dividend and divisor's absolute values are found and stored in more scratchpad registers(c,d).
+    Multiple tests are then run on these values to detect ABV(Divisor) > ABV(Dividend) aswell as divisor = 0. These cases have
+    special routes in which the correct ac is set, aswell as the correct sp + 1 and sp + 2(as specified in assignment criteria).
+    The normal case first finds out wether the 2 values are different signs or the same sign. This will allow me to free up some
+    registers and determine if the result needs to be negative or positive. The dividend is then repeatedly subtracted by the 
+    divisor in a simple loop that counts iterations and stops on the condition that the dividend < divisor. Sp + 1 and sp + 2 will
+    be set aswell as the ac and the program will position sp in the correct stack position for all cases.
+
+MAKEFILE COMMANDS:
+
+"make" creates the masm executable
+"make mc" creates prom_nr.dat file
+"make div" and "make mult" and "make rshift" are helper macros for testing(I imagine you wont use these)
+    -these will not work because obj files no longer exist
+"make clean" cleans up directory
+
+P.S. I included multiple text files to help organize what was requested in assignment, The
+    names are self explanatory.
+
+P.P.S This assignment was a nightmare and I hope to never write micro-code ever again.

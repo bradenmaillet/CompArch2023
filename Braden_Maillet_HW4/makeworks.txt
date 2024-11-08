@@ -1,0 +1,8 @@
+bmaillet@cs5:~/CompArch/Braden_Maillet_HW4$ make
+gcc -c -g mic1symasm_nand_rshift.c
+flex mic1symasm_nand_rshift.ll
+gcc -c -g lex.yy.c
+gcc -o masm_nr mic1symasm_nand_rshift.o lex.yy.o
+bmaillet@cs5:~/CompArch/Braden_Maillet_HW4$ ls
+divTestResult.txt  lex.yy.o  masm_nr  mic1                      mic1symasm_nand_rshift.ll  mic1symasm_nand_rshift.o  prom_nr.dat           writeup.txt
+lex.yy.c           Makefile  mcc      mic1symasm_nand_rshift.c  mic1symasm_nand_rshift.mc  multTestResult.txt        rshiftTestResult.txt

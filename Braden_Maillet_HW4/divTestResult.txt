@@ -1,0 +1,262 @@
+./mic1 prom_nr.dat div_test.obj 0 2000
+
+{RESULT 1}***************************************************************************************************
+
+Read in 176 micro instructions
+Read in 52 machine instructions
+Starting PC is : 0000000000000000  base 10:       0
+Starting SP is : 0000011111010000  base 10:    2000
+
+
+ProgramCounter : 0000000000000110  base 10:       6
+Accumulator    : 0000000000000000  base 10:       0 {ac 0 normal case}***************************************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111001100  base 10:    1996
+ARegister      : 0001001101001111  base 10:    4943
+BRegister      : 1110101111100000  base 10:   60384
+CRegister      : 0001001101001111  base 10:    4943
+DRegister      : 0001010000100000  base 10:    5152
+ERegister      : 0000011111001100  base 10:    1996
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 93
+
+Type decimal address to view memory,  q  to quit or  c  to continue: 2000
+     the location 2000 has value 1111111111111111 , or 65535  or signed     -1
+Type  <Enter>  to continue debugging
+Type        q  to quit
+Type        f for forward range
+Type        b for backward range: b
+Type the number of reverse locations to dump: 5
+     the location 1999 has value 1110101111100000 , or 60384  or signed  -5152 {divisor 1} *********************************************
+     the location 1998 has value 0001001101001111 , or  4943  or signed   4943 {dividend 1}
+     the location 1997 has value 0001001101001111 , or  4943  or signed   4943 {remainder 1}
+     the location 1996 has value 0000000000000000 , or     0  or signed      0 {qoutient 1}
+     the location 1995 has value 1111111111111111 , or 65535  or signed     -1
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000000110
+
+{RESULT 2}**********************************************************************************************************************
+
+ProgramCounter : 0000000000001100  base 10:      12
+Accumulator    : 1111111111111111  base 10:   65535 {AC = -1 illegal case}*******************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111001000  base 10:    1992
+ARegister      : 0000000110110101  base 10:     437
+BRegister      : 0000011111001000  base 10:    1992
+CRegister      : 0000000110110101  base 10:     437
+DRegister      : 1111111111111111  base 10:   65535
+ERegister      : 1111111001001011  base 10:   65099
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 186
+
+Type decimal address to view memory,  q  to quit or  c  to continue: 2000
+     the location 2000 has value 1111111111111111 , or 65535  or signed     -1
+Type  <Enter>  to continue debugging
+Type        q  to quit
+Type        f for forward range
+Type        b for backward range: b
+Type the number of reverse locations to dump: 10
+     the location 1999 has value 1110101111100000 , or 60384  or signed  -5152 {1}
+     the location 1998 has value 0001001101001111 , or  4943  or signed   4943 {1}
+     the location 1997 has value 0001001101001111 , or  4943  or signed   4943 {1}
+     the location 1996 has value 0000000000000000 , or     0  or signed      0 {1}
+     the location 1995 has value 0000000000000000 , or     0  or signed      0 {divisor 2} ******************************
+     the location 1994 has value 0000000110110101 , or   437  or signed    437 {dividend 2}
+     the location 1993 has value 1111111111111111 , or 65535  or signed     -1 {remainder 2}
+     the location 1992 has value 0000000000000000 , or     0  or signed      0 {woutient 2}
+     the location 1991 has value 1111111111111111 , or 65535  or signed     -1
+     the location 1990 has value 1111111111111111 , or 65535  or signed     -1
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000001100
+
+{Result 3} ******************************************************************************************
+
+
+ProgramCounter : 0000000000010010  base 10:      18
+Accumulator    : 0000000000000000  base 10:       0 {ac is 0 normal case}************************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111000100  base 10:    1988
+ARegister      : 1101111111111001  base 10:   57337
+BRegister      : 0000011111000100  base 10:    1988
+CRegister      : 0000000000000111  base 10:       7
+DRegister      : 0000000000010000  base 10:      16
+ERegister      : 0000001000000000  base 10:     512
+FRegister      : 1111111111110111  base 10:   65527
+
+Total cycles   : 3871
+
+Type decimal address to view memory,  q  to quit or  c  to continue: 2000
+     the location 2000 has value 1111111111111111 , or 65535  or signed     -1
+Type  <Enter>  to continue debugging
+Type        q  to quit
+Type        f for forward range
+Type        b for backward range: b
+Type the number of reverse locations to dump: 15
+     the location 1999 has value 1110101111100000 , or 60384  or signed  -5152 {1}
+     the location 1998 has value 0001001101001111 , or  4943  or signed   4943 {1}
+     the location 1997 has value 0001001101001111 , or  4943  or signed   4943 {1}
+     the location 1996 has value 0000000000000000 , or     0  or signed      0 {1}
+     the location 1995 has value 0000000000000000 , or     0  or signed      0 {2}
+     the location 1994 has value 0000000110110101 , or   437  or signed    437 {2}
+     the location 1993 has value 1111111111111111 , or 65535  or signed     -1 {2}
+     the location 1992 has value 0000000000000000 , or     0  or signed      0 {2}
+     the location 1991 has value 1111111111110000 , or 65520  or signed    -16 {divisor 3} **************************************
+     the location 1990 has value 1101111111111001 , or 57337  or signed  -8199 {dividend 3}
+     the location 1989 has value 0000000000000111 , or     7  or signed      7 {remainer 3}
+     the location 1988 has value 0000001000000000 , or   512  or signed    512 {qoutient 3}
+     the location 1987 has value 1111111111111111 , or 65535  or signed     -1
+     the location 1986 has value 1111111111111111 , or 65535  or signed     -1
+     the location 1985 has value 1111111111111111 , or 65535  or signed     -1
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000010010
+
+{CASE 4}**************************************************************************************************
+
+
+ProgramCounter : 0000000000011000  base 10:      24
+Accumulator    : 0000000000000000  base 10:       0 {ac is 0 normal case} ***********************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011111000000  base 10:    1984
+ARegister      : 0101111111111111  base 10:   24575
+BRegister      : 0000011111000000  base 10:    1984
+CRegister      : 0000000011111111  base 10:     255
+DRegister      : 0000000100000000  base 10:     256
+ERegister      : 1111111110100001  base 10:   65441
+FRegister      : 1111111111111111  base 10:   65535
+
+Total cycles   : 4639
+
+Type decimal address to view memory,  q  to quit or  c  to continue: 2000
+     the location 2000 has value 1111111111111111 , or 65535  or signed     -1
+Type  <Enter>  to continue debugging
+Type        q  to quit
+Type        f for forward range
+Type        b for backward range: b
+Type the number of reverse locations to dump: 20
+     the location 1999 has value 1110101111100000 , or 60384  or signed  -5152 {1}
+     the location 1998 has value 0001001101001111 , or  4943  or signed   4943 {1}
+     the location 1997 has value 0001001101001111 , or  4943  or signed   4943 {1}
+     the location 1996 has value 0000000000000000 , or     0  or signed      0 {1}
+     the location 1995 has value 0000000000000000 , or     0  or signed      0 {2}
+     the location 1994 has value 0000000110110101 , or   437  or signed    437 {2}
+     the location 1993 has value 1111111111111111 , or 65535  or signed     -1 {2}
+     the location 1992 has value 0000000000000000 , or     0  or signed      0 {2}
+     the location 1991 has value 1111111111110000 , or 65520  or signed    -16 {3}
+     the location 1990 has value 1101111111111001 , or 57337  or signed  -8199 {3}
+     the location 1989 has value 0000000000000111 , or     7  or signed      7 {3}
+     the location 1988 has value 0000001000000000 , or   512  or signed    512 {3}
+     the location 1987 has value 1111111100000000 , or 65280  or signed   -256 {divisor 4} ***************************************
+     the location 1986 has value 0101111111111111 , or 24575  or signed  24575 {dividend 4}
+     the location 1985 has value 0000000011111111 , or   255  or signed    255 {remainder 4}
+     the location 1984 has value 1111111110100001 , or 65441  or signed    -95 {qoutient 4}
+     the location 1983 has value 1111111111111111 , or 65535  or signed     -1
+     the location 1982 has value 1111111111111111 , or 65535  or signed     -1
+     the location 1981 has value 1111111111111111 , or 65535  or signed     -1
+     the location 1980 has value 1111111111111111 , or 65535  or signed     -1
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000011000
+
+{result 5} *************************************************************************************************************************
+
+ProgramCounter : 0000000000011110  base 10:      30
+Accumulator    : 0000000000000000  base 10:       0 {ac is 0 normal case}***************************************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011110111100  base 10:    1980
+ARegister      : 0000000000000000  base 10:       0
+BRegister      : 0000000111111111  base 10:     511
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000111111111  base 10:     511
+ERegister      : 0000011110111100  base 10:    1980
+FRegister      : 1111111111111111  base 10:   65535
+
+Total cycles   : 4731
+
+Type decimal address to view memory,  q  to quit or  c  to continue: 2000
+     the location 2000 has value 1111111111111111 , or 65535  or signed     -1
+Type  <Enter>  to continue debugging
+Type        q  to quit
+Type        f for forward range
+Type        b for backward range: b
+Type the number of reverse locations to dump: 20
+     the location 1999 has value 1110101111100000 , or 60384  or signed  -5152
+     the location 1998 has value 0001001101001111 , or  4943  or signed   4943
+     the location 1997 has value 0001001101001111 , or  4943  or signed   4943
+     the location 1996 has value 0000000000000000 , or     0  or signed      0
+     the location 1995 has value 0000000000000000 , or     0  or signed      0
+     the location 1994 has value 0000000110110101 , or   437  or signed    437
+     the location 1993 has value 1111111111111111 , or 65535  or signed     -1
+     the location 1992 has value 0000000000000000 , or     0  or signed      0
+     the location 1991 has value 1111111111110000 , or 65520  or signed    -16
+     the location 1990 has value 1101111111111001 , or 57337  or signed  -8199
+     the location 1989 has value 0000000000000111 , or     7  or signed      7
+     the location 1988 has value 0000001000000000 , or   512  or signed    512
+     the location 1987 has value 1111111100000000 , or 65280  or signed   -256
+     the location 1986 has value 0101111111111111 , or 24575  or signed  24575
+     the location 1985 has value 0000000011111111 , or   255  or signed    255
+     the location 1984 has value 1111111110100001 , or 65441  or signed    -95
+     the location 1983 has value 0000000111111111 , or   511  or signed    511 {divisor 5} **********************************************
+     the location 1982 has value 0000000000000000 , or     0  or signed      0 {dividend 5}
+     the location 1981 has value 0000000000000000 , or     0  or signed      0 {remainder 5}
+     the location 1980 has value 0000000000000000 , or     0  or signed      0 {qoutient 5}
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000011110
+
+{CASE 6}*********************************************************************************************************************
+
+ProgramCounter : 0000000000100100  base 10:      36
+Accumulator    : 0000000000000000  base 10:       0 {ac is 0 normal case}****************************************************
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000011110111000  base 10:    1976
+ARegister      : 0001111111111111  base 10:    8191
+BRegister      : 0000011110111000  base 10:    1976
+CRegister      : 0000000000001110  base 10:      14
+DRegister      : 0000000000010001  base 10:      17
+ERegister      : 0000000111100001  base 10:     481
+FRegister      : 1111111111111101  base 10:   65533
+
+Total cycles   : 8198
+
+Type decimal address to view memory,  q  to quit or  c  to continue: 2000
+     the location 2000 has value 1111111111111111 , or 65535  or signed     -1
+Type  <Enter>  to continue debugging
+Type        q  to quit
+Type        f for forward range
+Type        b for backward range: b
+Type the number of reverse locations to dump: 24
+     the location 1999 has value 1110101111100000 , or 60384  or signed  -5152
+     the location 1998 has value 0001001101001111 , or  4943  or signed   4943
+     the location 1997 has value 0001001101001111 , or  4943  or signed   4943
+     the location 1996 has value 0000000000000000 , or     0  or signed      0
+     the location 1995 has value 0000000000000000 , or     0  or signed      0
+     the location 1994 has value 0000000110110101 , or   437  or signed    437
+     the location 1993 has value 1111111111111111 , or 65535  or signed     -1
+     the location 1992 has value 0000000000000000 , or     0  or signed      0
+     the location 1991 has value 1111111111110000 , or 65520  or signed    -16
+     the location 1990 has value 1101111111111001 , or 57337  or signed  -8199
+     the location 1989 has value 0000000000000111 , or     7  or signed      7
+     the location 1988 has value 0000001000000000 , or   512  or signed    512
+     the location 1987 has value 1111111100000000 , or 65280  or signed   -256
+     the location 1986 has value 0101111111111111 , or 24575  or signed  24575
+     the location 1985 has value 0000000011111111 , or   255  or signed    255
+     the location 1984 has value 1111111110100001 , or 65441  or signed    -95
+     the location 1983 has value 0000000111111111 , or   511  or signed    511
+     the location 1982 has value 0000000000000000 , or     0  or signed      0
+     the location 1981 has value 0000000000000000 , or     0  or signed      0
+     the location 1980 has value 0000000000000000 , or     0  or signed      0
+     the location 1979 has value 0000000000010001 , or    17  or signed     17 {divisor 6} **********************************************************
+     the location 1978 has value 0001111111111111 , or  8191  or signed   8191 {dividend 6}
+     the location 1977 has value 0000000000001110 , or    14  or signed     14 {remainder 6}
+     the location 1976 has value 0000000111100001 , or   481  or signed    481 {qoutient 6}
