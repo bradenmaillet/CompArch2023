@@ -1,0 +1,6 @@
+Name: Braden Maillet
+Email:braden_maillet@student.uml.edu
+
+Degree Of Success(perceived): 100%
+
+Description: I didnt have much of an approach to this project to be frank. Most of the work was already done for me in the starter code. That being said most of my time on this project was used researching and better understanding Unions and their applications. I am unaware of any problems with this program.
