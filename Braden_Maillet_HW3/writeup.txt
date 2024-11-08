@@ -1,0 +1,16 @@
+Name: Braden Maillet
+email: Braden_Maillet@student.uml.edu
+
+Problems: No problems that I am aware of.
+
+Approach and description:
+	 This program returns a fibonacci number according to the given input.
+	 It does this recursively(due to the project requirements). The program
+	 is extremely similar to the recursive fibonacci C function that was
+	 given to us as reference. My program pushes the call arguement and then calls
+	 the function fib. It does this for both n-1 and n-2 for every arguement value.
+	 If either value is 0 or 1 it returns 0 and 1 respectively. otherwise it will
+	 return Fib(n-1) + Fib(n-2).
+	
+NOTE: to run this program all that is needed in the command line is:(and it takes a long time to finish running)
+**************** Make run ***************
