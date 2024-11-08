@@ -1,0 +1,31 @@
+This is the Parent process report:
+
+PARENT PROG:  Process ID is:            3934349
+PARENT PROC:  Process parent ID is:     3933600
+PARENT PROC:  Real UID is:              1297600773
+PARENT PROC:  Real GID is:              3000
+PARENT PROC:  Effective UID is:         1297600773
+PARENT PROC:  Effective GID is:         3000
+PARENT PROC:  Process priority is:      0
+
+PARENT PROC: will now create child, write pipe,
+ and do a normal termination
+
+PARENT PROG: created Child with 3934350 PID
+This is the Child process report:
+
+CHILD PROC:  Process ID is:             3934350
+CHILD PROC:  Process parent ID is:      3934349
+CHILD PROC:  Real UID is:               1297600773
+CHILD PROC:  Real GID is:               3000
+CHILD PROC:  Effective UID is:          1297600773
+CHILD PROC:  Effective GID is:          3000
+CHILD PROC:  Process priority is:       0
+
+CHILD PROG: about to read pipe and report parent message:
+
+CHILD PROC: parent's msg is
+         This is the pipe message from the parent with PID 3934349
+
+CHILD PROC: Process parent ID now is:   3934349
+CHILD PROC: ### Goodbye ###
